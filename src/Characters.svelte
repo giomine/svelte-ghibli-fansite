@@ -51,7 +51,7 @@ window.onload = () => {         // important! this defers the javascript so that
     app.appendChild(container)
 })
 .catch(error => {
-    console.log(error)
+    console.log('There has been a problem with your fetch operation: ', error)
 })
 }
 </script>

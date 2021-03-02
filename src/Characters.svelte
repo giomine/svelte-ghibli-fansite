@@ -1,6 +1,15 @@
 <script>
     import Navbar from "./Navbar.svelte";
 
+    // ------------ this timeOut is only a temp solution ------------vv
+    setTimeout(function(){                  
+    if(!window.location.hash) {
+            window.location = window.location + '#loaded';
+            window.location.reload();
+        }
+}, 10);
+    // ------------ this timeOut is only a temp solution ------------^^
+
 window.onload = () => {         // important! this defers the javascript so that all elements are created. its an alternatve to using defer.
 
     const app = document.getElementById('root')
